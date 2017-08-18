@@ -2,6 +2,7 @@ Role Name
 =========
 
 This role removes old preinstalled VMware tools from forpsi VM and installs open-vm-tools from EPEL repository
+
 Requirements
 ------------
 
