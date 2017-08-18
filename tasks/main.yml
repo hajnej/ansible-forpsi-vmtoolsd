@@ -1,0 +1,22 @@
+---
+# tasks file for forpsi-vmtoolsd
+- name: "Remove old VMware tools"
+  command: "{{vmtoolsd_uninstall_script}}"
+  args:
+    removes: "{{vmtoolsd_uninstall_script}}"
+
+- name: "Install EPEL repository"
+  yum:
+    name: "epel-release"
+    state: "latest"
+
+- name: "Install Open VM Tools packages"
+  yum:
+    name: "open-vm-tools"
+    state: "latest"
+
+- name: "Start and enable vmtoolsd"
+  service:
+    name: "vmtoolsd"
+    state: "started"
+    enabled: "yes"

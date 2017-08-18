@@ -1,0 +1,5 @@
+---
+- hosts: forpsicz01
+  remote_user: root
+  roles:
+    - forpsi-vmtoolsd

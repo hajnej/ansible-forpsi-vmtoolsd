@@ -1,0 +1,4 @@
+---
+# defaults file for forpsi-vmtoolsd
+vmtoolsd_uninstall_script: "/usr/bin/vmware-uninstall-tools.pl"
+
